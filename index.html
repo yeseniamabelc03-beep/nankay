@@ -1,3 +1,4 @@
+Código: 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,173 +11,186 @@
 </head>
 
 <body>
-    <header class="container">
+    <header class="container-fluid">
         <!-- seccion encabezado -->
-        <div class="row align-items-center bg-info-subtle text-info-emphasis p-2">
-            <div class="col-4">
+        <section class="row align-items-center bg-info-subtle text-info-emphasis p-2">
+            <div class="col-4 col-md-2">
                 <div class="ratio ratio-1x1">
                     <img src="images/logo.jpg" alt="logo" class="rounded-circle object-fit-cover">
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-md-10">
                 <h1 class="text-center fw-bold display-3">Nankay</h1>
                 <h2 class="text-center fs-3 fw-semibold">Tú imaginas, nosotros lo creamos</h2>
             </div>
-        </div>
+        </section>
     </header>
 
-    <main class="container">
+    <main class="container-fluid">
         <!-- seccion banner -->
-        <div class="row">
+        <section class="row">
             <div class="col p-0">
                 <img src="images/banner.jpg" alt="banner" class="img-fluid w-100">
             </div>
-        </div>
+        </section>
 
         <h2 class="display-4 fw-bold mb-2 p-3 text-info-emphasis">Nuestros Productos</h2>
 
-        <!-- seccion macetas -->
-        <div class="row align-items-center p-3 mt-3 bg-success-subtle">
-            <div class="col-8">
-                <h3 class="display-6 fw-bold text-success-emphasis">Macetas decorativas</h3>
-            </div>
-            <div class="col-4">
-                <div class="ratio ratio-1x1">
-                    <img src="images/maceta.jpg" alt="macetas" class="rounded-circle object-fit-cover">
-                </div>
-            </div>
-        </div>
-
-        <!-- seccion velas -->
-        <div class="row align-items-center p-3 mt-3 bg-warning-subtle">
-            <div class="col-4">
-                <div class="ratio ratio-1x1">
-                    <img src="images/velas.jpg" alt="velas" class="rounded-circle object-fit-cover">
-                </div>
-            </div>
-            <div class="col-8">
-                <h3 class="display-6 fw-bold text-warning-emphasis">Velas Artesanales</h3>
-            </div>
-        </div>
-
-        <!-- seccion recuerdos bodas -->
-        <div class="row align-items-center p-3 mt-3 bg-info-subtle">
-            <div class="col-8">
-                <h3 class="display-6 fw-bold text-info-emphasis">Recuerdos para bodas y cumpleaños</h3>
-            </div>
-            <div class="col-4">
-                <div class="ratio ratio-1x1">
-                    <img src="images/recuerdos.jpg" alt="recuerdos" class="rounded-circle object-fit-cover">
-                </div>
-            </div>
-        </div>
-
-        <!-- seccion detalles corporativos -->
-        <div class="row align-items-center p-3 mt-3 bg-success-subtle">
-            <div class="col-4">
-                <div class="ratio ratio-1x1">
-                    <img src="images/detallescorporativos.jpg" alt="detalles corporativos" class="rounded-circle object-fit-cover">
-                </div>
-            </div>
-            <div class="col-8">
-                <h3 class="display-6 fw-bold text-success-emphasis">Detalles corporativos</h3>
-            </div>
-        </div>
-
-        <!-- seccion mini jardines -->
-        <div class="row align-items-center p-3 mt-3 bg-warning-subtle">
-            <div class="col-8">
-                <h3 class="display-6 fw-bold text-warning-emphasis">Mini Jardines</h3>
-            </div>
-            <div class="col-4">
-                <div class="ratio ratio-1x1">
-                    <img src="images/minijardin.jpg" alt="minijardines" class="rounded-circle object-fit-cover">
-                </div>
-            </div>
-        </div>
-
-        <!-- seccion lista servicios -->
-        <div class="row align-items-center p-3 mt-3 bg-success-subtle">
-            <h3 class="display-6 fw-bold text-success-emphasis">Lista de servicios</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-
-       <!-- seccion ubicación -->
-        <div class="row align-items-center p-3 mt-3 bg-info-subtle">
-            <div class="col-12">
-                <h3 class="display-6 fw-bold text-info-emphasis">Ubicación</h3>
-            </div>
-            <div class="col-12 mt-3">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps?q=Latacunga,Ecuador&output=embed"
-                            title="Ubicación de Nankay" class="rounded" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- formulario -->
-        <div class="row p-3 mt-3 bg-warning-subtle">
-            <div class="col-12">
-                <h3 class="display-6 fw-bold text-warning-emphasis">Haz tu pedido</h3>
-                <form action="#" method="post">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label fw-semibold">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <div class="row g-3">
+            <!-- seccion macetas -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <section class="row align-items-center p-3 m-0 h-100 bg-success-subtle">
+                    <div class="col-8 col-md-12 text-md-center">
+                        <h3 class="display-6 fw-bold text-success-emphasis">Macetas decorativas</h3>
                     </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label fw-semibold">Correo</label>
-                        <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="telefono" class="form-label fw-semibold">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="0991234567" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
-                    </div>
-                    <div class="row">
-                        <div class="col-8 mb-3">
-                            <label for="producto" class="form-label fw-semibold">Producto</label>
-                            <select class="form-select" id="producto" name="producto" required>
-                                <option value="" selected>Selecciona...</option>
-                                <option>Recuerdos</option>
-                                <option>Macetas</option>
-                                <option>Plantas</option>
-                            </select>
-                        </div>
-                        <div class="col-4 mb-3">
-                            <label for="cantidad" class="form-label fw-semibold">Cantidad</label>
-                            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1" required>
+                    <div class="col-4 col-md-6 mx-md-auto order-md-first">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/maceta.jpg" alt="macetas" class="rounded-circle object-fit-cover">
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="detalles" class="form-label fw-semibold">Detalles del producto</label>
-                        <textarea class="form-control" id="detalles" name="detalles" rows="4" placeholder="Colores, diseño, texto, fecha..."></textarea>
-                    </div>
-                    <button type="submit" class="btn bg-info text-info-emphasis border border-info w-100 fw-bold">Enviar</button>
-                </form>
+                </section>
             </div>
+
+            <!-- seccion velas -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <section class="row align-items-center p-3 m-0 h-100 bg-warning-subtle">
+                    <div class="col-4 col-md-6 mx-md-auto">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/velas.jpg" alt="velas" class="rounded-circle object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-12 text-md-center">
+                        <h3 class="display-6 fw-bold text-warning-emphasis">Velas Artesanales</h3>
+                    </div>
+                </section>
+            </div>
+
+            <!-- seccion recuerdos bodas -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <section class="row align-items-center p-3 m-0 h-100 bg-info-subtle">
+                    <div class="col-8 col-md-12 text-md-center">
+                        <h3 class="display-6 fw-bold text-info-emphasis">Recuerdos para bodas y cumpleaños</h3>
+                    </div>
+                    <div class="col-4 col-md-6 mx-md-auto order-md-first">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/recuerdos.jpg" alt="recuerdos" class="rounded-circle object-fit-cover">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- seccion detalles corporativos -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <section class="row align-items-center p-3 m-0 h-100 bg-success-subtle">
+                    <div class="col-4 col-md-6 mx-md-auto">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/detallescorporativos.jpg" alt="detalles corporativos" class="rounded-circle object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-12 text-md-center">
+                        <h3 class="display-6 fw-bold text-success-emphasis">Detalles corporativos</h3>
+                    </div>
+                </section>
+            </div>
+
+            <!-- seccion mini jardines -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <section class="row align-items-center p-3 m-0 h-100 bg-warning-subtle">
+                    <div class="col-8 col-md-12 text-md-center">
+                        <h3 class="display-6 fw-bold text-warning-emphasis">Mini Jardines</h3>
+                    </div>
+                    <div class="col-4 col-md-6 mx-md-auto order-md-first">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/minijardin.jpg" alt="minijardines" class="rounded-circle object-fit-cover">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- seccion lista servicios -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <section class="p-3 h-100 bg-success-subtle">
+                    <h3 class="display-6 fw-bold text-success-emphasis">Lista de servicios</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- seccion ubicación -->
+            <div class="col-12 col-md-6">
+                <section class="p-3 h-100 bg-info-subtle d-flex flex-column">
+                    <h3 class="display-6 fw-bold text-info-emphasis">Ubicación</h3>
+                    <div class="flex-grow-1 mt-3">
+                        <iframe src="https://www.google.com/maps?q=Latacunga,Ecuador&output=embed"
+                                title="Ubicación de Nankay" class="rounded w-100 h-100" style="min-height: 350px;" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </div>
+
+            <!-- seccion formulario -->
+            <div class="col-12 col-md-6">
+                <section class="p-3 h-100 bg-warning-subtle">
+                    <h3 class="display-6 fw-bold text-warning-emphasis">Haz tu pedido</h3>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-semibold">Correo</label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label fw-semibold">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="0991234567" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 mb-3">
+                                <label for="producto" class="form-label fw-semibold">Producto</label>
+                                <select class="form-select" id="producto" name="producto" required>
+                                    <option value="" selected>Selecciona...</option>
+                                    <option>Recuerdos</option>
+                                    <option>Macetas</option>
+                                    <option>Plantas</option>
+                                </select>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <label for="cantidad" class="form-label fw-semibold">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="detalles" class="form-label fw-semibold">Detalles del producto</label>
+                            <textarea class="form-control" id="detalles" name="detalles" rows="4" placeholder="Colores, diseño, texto, fecha..."></textarea>
+                        </div>
+                        <button type="submit" class="btn bg-info text-info-emphasis border border-info w-100 fw-bold">Enviar</button>
+                    </form>
+                </section>
+            </div>
+
         </div>
     </main>
 
     <!-- footer -->
     <footer class="container-fluid bg-info-subtle text-info-emphasis text-center p-3 mt-3">
         <div class="row">
-            <div class="col-12">
+            <section class="col-12">
                 <p class="mb-2 fw-semibold">Síguenos en nuestras redes sociales</p>
                 <a href="https://www.facebook.com/nankayec" target="_blank" aria-label="Facebook" class="text-info-emphasis fs-2 mx-2"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/nankayec" target="_blank" aria-label="Instagram" class="text-info-emphasis fs-2 mx-2"><i class="bi bi-instagram"></i></a>
                 <a href="https://wa.me/593978696410" target="_blank" aria-label="WhatsApp" class="text-info-emphasis fs-2 mx-2"><i class="bi bi-whatsapp"></i></a>
-            </div>
-            <div class="col-12 mt-3">
+            </section>
+            <section class="col-12 mt-3">
                 <h5>Contactos</h5>
                 <p class="mb-1">Teléfono: 097 869 6410</p>
                 <p class="mb-1">Correo: nankaec@gmail.com</p>
                 <p class="mb-0">Ubicación: Latacunga, Ecuador</p>
-            </div>
+            </section>
         </div>
     </footer>
 </body>
